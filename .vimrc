@@ -67,30 +67,45 @@ colorscheme elflord
 execute pathogen#infect()
 
 " autoload NerdTree
+" cd ~/.vim/bundle
+" git clone https://github.com/scrooloose/nerdtree.git
 autocmd vimenter * NERDTree
 let NERDTreeShowHidden=1
 
 " autoload NerdTreeTabs
+" cd ~/.vim/bundle
+" git clone https://github.com/jistr/vim-nerdtree-tabs.git
 let g:nerdtree_tabs_open_on_console_startup=1
 map <C-n> :NERDTreeTabsToggle<CR>
 
 " vim-powerline plugin settings
+" cd ~/.vim/bundle
+" git clone https://github.com/Lokaltog/vim-powerline.git
+" Then read vim-powerline/fontpatcher/README.rst to patch fonts, or install and
+" use mine
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
 
 " ctrlp settings
+" $ cd ~/.vim/bundle
+" $ git clone https://github.com/kien/ctrlp.vim.git
 let g:ctrlp_max_height = 30   
 set wildignore+=*.pyc         
 set wildignore+=*_build/*     
 set wildignore+=*/coverage/*  
 
 " jedi-vim settings
+" cd ~/.vim/bundle/ && git clone --recursive https://github.com/davidhalter/jedi-vim.git
+" sudo pip install jedi
 let g:jedi#usages_command = "<leader>z"                       
 let g:jedi#popup_on_dot = 0                                   
 let g:jedi#popup_select_first = 0                             
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 " python-mode plugin settings
+" cd ~/.vim/bundle
+" git clone git://github.com/klen/python-mode.git
+" sudo pip install rope ropemode ropevim
 map <Leader>g :call RopeGotoDefinition()<CR>                    
 let ropevim_enable_shortcuts = 1                                
 let g:pymode_rope_goto_def_newwin = "vnew"                      
