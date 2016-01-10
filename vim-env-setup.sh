@@ -23,7 +23,7 @@ if [ -d ~/.vim/bundle ]; then
   git clone https://github.com/kien/ctrlp.vim.git &&
   git clone --recursive https://github.com/davidhalter/jedi-vim.git &&
   git clone https://github.com/python-rope/ropevim.git &&
-  git cloen https://github.com/Xuyuanp/nerdtree-git-plugin.git &&
+  #git clone https://github.com/Xuyuanp/nerdtree-git-plugin.git &&
   git clone git://github.com/tpope/vim-fugitive.git &&
   vim -u NONE -c "helptags vim-fugitive/doc" -c q &&
   git clone git://github.com/klen/python-mode.git 
