@@ -84,8 +84,10 @@ map <C-n> :NERDTreeTabsToggle<CR>
 " git clone https://github.com/Lokaltog/vim-powerline.git
 " Then read vim-powerline/fontpatcher/README.rst to patch fonts, or install and
 " use mine
+" let g:miniBufExplForceSyntaxEnable = 1
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
+set t_Co=256
 
 " ctrlp settings
 " $ cd ~/.vim/bundle
