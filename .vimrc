@@ -111,13 +111,13 @@ let g:jedi#popup_select_first = 0
 " sudo pip install rope ropemode ropevim
 map <Leader>g :call RopeGotoDefinition()<CR>                    
 "let g:pymode_rope = 0
-"let g:pymode_rope_regenerate_on_write = 0
-"let g:pymode_rope_autoimport = 0
-"let g:pymode_rope_lookup_project = 0
+let g:pymode_rope_regenerate_on_write = 0
+let g:pymode_rope_autoimport = 0
+let g:pymode_rope_lookup_project = 0
 let g:pymode_rope_complete_on_dot = 0
 let ropevim_enable_shortcuts = 1                                
 let g:pymode_rope_goto_def_newwin = "vnew"                      
-let g:pymode_rope_extended_complete = 1                         
+let g:pymode_rope_extended_complete = 0                         
 let g:pymode_breakpoint = 0                                     
 let g:pymode_syntax = 1                                         
 let g:pymode_syntax_builtin_objs = 0                            
