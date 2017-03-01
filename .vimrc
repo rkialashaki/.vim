@@ -101,15 +101,20 @@ set wildignore+=*/coverage/*
 " cd ~/.vim/bundle/ && git clone --recursive https://github.com/davidhalter/jedi-vim.git
 " sudo pip install jedi
 let g:jedi#usages_command = "<leader>z"                       
-let g:jedi#popup_on_dot = 0                                   
+let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0                             
-map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+"map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 " python-mode plugin settings
 " cd ~/.vim/bundle
 " git clone git://github.com/klen/python-mode.git
 " sudo pip install rope ropemode ropevim
 map <Leader>g :call RopeGotoDefinition()<CR>                    
+"let g:pymode_rope = 0
+"let g:pymode_rope_regenerate_on_write = 0
+"let g:pymode_rope_autoimport = 0
+"let g:pymode_rope_lookup_project = 0
+let g:pymode_rope_complete_on_dot = 0
 let ropevim_enable_shortcuts = 1                                
 let g:pymode_rope_goto_def_newwin = "vnew"                      
 let g:pymode_rope_extended_complete = 1                         
