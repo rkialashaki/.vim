@@ -27,7 +27,8 @@ if [ -d ~/.vim/bundle ]; then
   #git clone https://github.com/Xuyuanp/nerdtree-git-plugin.git &&
   git clone git://github.com/tpope/vim-fugitive.git &&
   vim -u NONE -c "helptags vim-fugitive/doc" -c q &&
-  git clone git://github.com/klen/python-mode.git 
+  git clone git://github.com/klen/python-mode.git &&
+  git clone https://github.com/fatih/vim-go.git
 else
   echo "Directory ~/.vim/bundle not found!"
 fi
