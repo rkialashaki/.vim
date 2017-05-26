@@ -150,3 +150,6 @@ set nofoldenable
 "set ai                  " auto indenting
 "set background=dark	" Makes dark fonts pop on dark terminal
 "filetype plugin on      " use the file type plugins
+"
+
+"Plugin 'Yggdroot/indentLine'
