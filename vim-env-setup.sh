@@ -33,5 +33,6 @@ else
   echo "Directory ~/.vim/bundle not found!"
 fi
 
-sudo pip install jedi ipdb rope ropemode ropevim
-
+sudo pip install jedi ipdb rope ropemode ropevim pylama
+sudo pip2 install jedi ipdb rope ropemode ropevim pylama
+sudo pip3 install jedi ipdb rope ropemode ropevim pylama
