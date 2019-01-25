@@ -33,14 +33,20 @@ else
   echo "Directory ~/.vim/bundle not found!"
 fi
 
-if [ -x `which pip` ]; then
+if [ -z `which pip` ]; then
+  echo "pip command not found"
+else
   sudo pip install jedi ipdb rope ropemode ropevim pylama
 fi
 
-if [ -x `which pip2` ]; then
+if [ -z `which pip2` ]; then
+  echo "pip2 command not found"
+else
   sudo pip2 install jedi ipdb rope ropemode ropevim pylama
 fi
 
-if [ -x `which pip3` ]; then
+if [ -z `which pip3` ]; then
+  echo "pip3 command not found"
+else
   sudo pip3 install jedi ipdb rope ropemode ropevim pylama
 fi
