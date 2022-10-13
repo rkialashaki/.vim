@@ -2,6 +2,9 @@
 
 My vim environment setup
 
+Also Consider the following IDE setup:
+https://dane-bulat.medium.com/how-to-turn-vim-into-a-lightweight-ide-6185e0f47b79
+
 Resources:
 =====
 
