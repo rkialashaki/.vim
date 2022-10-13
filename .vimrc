@@ -70,13 +70,16 @@ call pathogen#infect()
 " autoload NerdTree
 " cd ~/.vim/bundle
 " git clone https://github.com/scrooloose/nerdtree.git
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 let NERDTreeShowHidden=1
+let g:nerdtree_tabs_open_on_console_startup=0
+let g:nerdtree_tabs_open_on_gui_startup=0
+let g:nerdtree_tabs_open_on_new_tab=0
+" let g:NERDTreeHijackNetrw=0
 
 " autoload NerdTreeTabs
 " cd ~/.vim/bundle
 " git clone https://github.com/jistr/vim-nerdtree-tabs.git
-let g:nerdtree_tabs_open_on_console_startup=1
 map <C-n> :NERDTreeTabsToggle<CR>
 
 " vim-powerline plugin settings
